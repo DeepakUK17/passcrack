@@ -106,7 +106,7 @@ body{
     display: none;  
 
     text-transform: uppercase;
-    text-decoration-color: white;
+    color: white;
     font-size: 25px;
     letter-spacing: 2px;
     padding-left: 10px;
