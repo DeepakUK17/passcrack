@@ -93,7 +93,7 @@ body{
 .output{
     border: 1px solid black;
     width: 80%;
-    background-image: url(image/logo\ 1.jpg);
+    background-image: url(image/output.jpg);
     background-color: rgba(255, 255, 255, 0.75);
     color: black;
     border-radius: 20px;
