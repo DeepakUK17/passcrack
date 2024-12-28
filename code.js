@@ -118,17 +118,17 @@ function program() {
       }
     }
 
-    output.innerHTML += '<span style="color:orange; text-decoration: underline;text-align: left;">Your password has:-<br>';
+    output.innerHTML += '<span style="color:red; text-decoration: underline;text-align: left;">Your password has:-<br>';
     output.innerHTML += `${lowerCount} lowercase letters<br>`;
     output.innerHTML += `${upperCount} uppercase letters<br>`;
     output.innerHTML += `${numCount} digits<br>`;
     output.innerHTML += `${wspaceCount} whitespaces<br>`;
     output.innerHTML += `${specialCount} special characters<br>`;
-    output.innerHTML += `<span style="color:orange; text-decoration: underline;text-align: left;">Password Score:<br>`;
+    output.innerHTML += `<span style="color:red; text-decoration: underline;text-align: left;">Password Score:<br>`;
     output.innerHTML += `${strength / 5}<br>`;
-    output.innerHTML += `<span style="color:orange; text-decoration: underline;text-align: left;">Remarks: <br>`;
+    output.innerHTML += `<span style="color:red; text-decoration: underline;text-align: left;">Remarks: <br>`;
     output.innerHTML += `${remarks}<br>`;
-    output.innerHTML += `<span style="color:orange; text-decoration: underline;text-align: left;">Note:<br>`;
+    output.innerHTML += `<span style="color:red; text-decoration: underline;text-align: left;">Note:<br>`;
     output.innerHTML += `${note}<br>`;
 
     for (let i of password) {
@@ -175,25 +175,25 @@ function program() {
     const years = days / 365;
 
     if (timeToCrackSeconds < 60) {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${timeToCrackSeconds} seconds<br>`;
     } else if (timeToCrackSeconds < 3600) {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${Math.round(minutes)} minutes<br>`;
     } else if (timeToCrackSeconds < 86400) {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${Math.round(hours)} hours<br>`;
     } else if (timeToCrackSeconds < 604800) {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:`;
       output.innerHTML+=`${Math.round(days)} days<br>`;
     } else if (timeToCrackSeconds < 2419200) {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:`;
       output.innerHTML+=`${Math.round(weeks)} weeks<br>`;
     } else if (timeToCrackSeconds < 18144000) {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${Math.round(months)} months<br>`;
     } else {
-      output.innerHTML+=`<span style="color:orange; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
+      output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${Math.round(years)} years<br>`;
     }
 
