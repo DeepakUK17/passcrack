@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PASSCRACK</title>
+    <link rel="icon" href="image/logo 1.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  class="body">
+    <center>
+    <h1 id="topic"> PASSCRACK </h1>
+    </center>
+    <center>
+        <div class="forms"> 
+            <h1>Test your password strenght</h1>
+            <form class="form">
+               <label >NAME</label>
+               <input type="text" placeholder="Enter your name" id="input-name" required>
+               <label >Date Of Birth</label>
+               <input type="date" placeholder="Enter your Date Of Birth" id="input-dob" required>
+               <label >Mobile Number</label>
+               <input type="text" placeholder="Enter your mobile number" id="input-number"  pattern="[0-9]{10}" maxlength="10"  required>
+               <label >Password</label>
+               <input type="password" placeholder="Enter your Password" id="input-password" required>
+               <button onclick="check_input()" id="submit-button" >SUBMIT</button>
+            </form>
+        </div> 
+       
+        <div class="output">
+            <form >
+                <button id="reset-button" > TRY DIFFERNT PASSWORD </button>
+            </form>
+        </div>
+    </center>
+    <script src="code.js"></script>
+    
+</body>
+</html>
