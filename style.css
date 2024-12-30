@@ -213,13 +213,6 @@ body{
     unicode-bidi: isolate;
 }
 
-@media screen and (max-width:1300px){
-    .com_img1 {
-        display: block;
-    }
-    
-}
-
 
 #topic3{
     background-color: black;
@@ -241,20 +234,20 @@ ul{
     width: 300px;
     height: 300px;
     float: left;
-   
+    
 }
 .about_2 img{
     width: 300px;
     height: 300px;
     float: right;
-
+    
 }
 .about_3 img{
     width: 300px;
     height: 300px;
     float: left;
     margin-bottom: 80px;
-
+    
 }
 
 
@@ -280,19 +273,19 @@ ul{
 }
 
 .about_1 h1 {
-
+    
     padding: 5px;
     margin: 20px;
 }
 
 .about_3 h1 {
-
+    
     padding: 5px;
     margin: 20px;
 }
 
 .about_2 h1 {
-
+    
     padding: 5px;
     margin: 20px;
     text-align: right;
@@ -315,3 +308,23 @@ ul{
     background-color: black;    
 }
 
+
+
+@media screen and (max-width:1300px){
+    .com_img1 {
+        display: block;
+    }
+
+    .about_1 img{
+        float: none;
+    }
+
+    .about_2 img{
+        float: none;
+    }
+    
+    .about_3 img{
+        float: none;
+    }
+    
+}
