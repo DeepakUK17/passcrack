@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-image:url(image/background.jpg)
 }
@@ -155,4 +158,40 @@ body{
     padding: 20px;
     margin-left: 70%;
 
+}
+
+#topic3 {
+    background-color: black;
+    color: white;
+    margin:0px;
+    padding-top: 0px; 
+    padding-bottom: 10px;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.com_img1 {
+    display: inline-block;
+    font-size: x-large ;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.com_img1 img {
+    width: 100px;
+    height: 90px;
+}
+
+.com_img1 h4 {
+    display: block;
+    text-align: center;
+    margin-block-start: em;
+    margin-block-end: em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
