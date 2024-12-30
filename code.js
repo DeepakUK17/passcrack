@@ -6,12 +6,20 @@ var output= document.querySelector(".output")
 var submitbutton= document.getElementById("submit-button")
 var foms= document.querySelector(".forms")
 var resetbutton= document.getElementById("reset-button")
+var togglePassword = document.getElementById('togglePassword');
 
 
 
 submitbutton.addEventListener('click', function(event){
   event.preventDefault()
 })
+
+togglePassword.addEventListener('click', () => {
+  const type = inputpassword.getAttribute('type') === 'password' ? 'text' : 'password';
+  inputpassword.setAttribute('type', type);
+  togglePassword.textContent = type === 'password' ? '👁️' : '◡';
+});
+
 
 resetbutton.addEventListener('click', function(event) {
   event.preventDefault()
