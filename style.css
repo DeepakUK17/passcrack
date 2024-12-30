@@ -1,4 +1,9 @@
-
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
 body{
     background-image:url(image/background.jpg)
 }
