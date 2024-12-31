@@ -312,4 +312,8 @@ ul{
     .about_3 ul {
         font-size: large;
     }
+    .output {
+        font-size: 15px;
+    }
+
 }
