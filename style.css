@@ -15,7 +15,7 @@ body{
     padding-bottom: 10px;
     border-radius: 50px;
     margin-top: 2px;
-    font-size: 45px;
+    font-size: 40px;
     padding-left: 20px;
 }
 
@@ -30,7 +30,7 @@ body{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 30px;
     z-index: 1;
     display: block;
     
@@ -53,7 +53,6 @@ body{
     font-weight:  normal;
     font-size: 40px;
     text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-    margin-bottom: 60px;
 }
 
 .forms label {
@@ -146,7 +145,7 @@ body{
     border-radius: 50px;
     margin-top: 50px;
     font-size: 45px;
-
+    
 }
 
 
@@ -256,13 +255,14 @@ ul{
     border-color:transparent;
     border-style: solid;
     height: 300px;
+    position: relative;
 }
 .about2 {
     border: 5px;
     border-color:transparent;
     border-style: solid;
     height: 300px;
-    
+    position: relative;
 }
 .about3 {
     border: 5px;
@@ -270,6 +270,7 @@ ul{
     border-style:solid;
     height: 300px;
     padding-bottom: 150px;
+    position: relative;
 }
 
 .about_1 h1 {
@@ -301,11 +302,16 @@ ul{
 }
 .about_3 ul {
     font-size: x-large;
+    margin-bottom: 20px;
     
 }
 
 .last {
-    background-color: black;    
+    background-color: black;
+    margin:0px;
+    padding: 0%;
+    text-align: center;
+    color: white;    
 }
 
 
