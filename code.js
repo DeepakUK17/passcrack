@@ -73,7 +73,7 @@ function program() {
     } else if (strength == 5) {
       remarks = "Now that's one hell of a strong password!!! Hackers don't have a chance guessing that password!";
     }
-    if (inputpassword.value.includes(inputname.value)) {
+    if (inputpassword.value.toLowerCase().includes(inputname.value.toLowerCase())) {
       note += "* Your password should not contain your name or any part of it. It's too easy to guess.<br>";
     }
     if (inputpassword.value.includes(inputdob.value.split('-')[0])) {
