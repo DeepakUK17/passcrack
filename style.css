@@ -170,16 +170,19 @@ ul{
 .about_1 img{
     width: 300px;
     height: 300px;
-    float: left; }
+    float: left;
+    position: relative; }
 .about_2 img{
     width: 300px;
     height: 300px;
-    float: right;}
+    float: right;
+    position: relative;}
 .about_3 img{
     width: 300px;
     height: 300px;
     float: left;
-    margin-bottom: 80px;   }
+    margin-bottom: 80px;
+    position: relative;   }
 .about1 {
     border: 5px;
     border-color:transparent;
@@ -201,23 +204,29 @@ ul{
     position: relative;}
 .about_1 h1 {
     padding: 5px;
-    margin: 20px;}
+    margin: 20px;
+    position: relative;}
 .about_3 h1 {
     padding: 5px;
-    margin: 20px;}
+    margin: 20px;
+    position: relative;}
 .about_2 h1 {  
     padding: 5px;
     margin: 20px;
-    text-align: right;}
+    text-align: right;
+    position: relative;}
 .about_1 ul {
     font-size: x-large;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
 .about_2 ul {
     font-size: x-large;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
 .about_3 ul {
     font-size: x-large;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    position: relative; }
 .last {
     background-color: black;
     margin:0px;
@@ -229,11 +238,11 @@ ul{
         display: block;
     }
     .about_1 img{
-        float: none;
+        float: inline-start;
     }
     .about_2 img{
-        float: none;
+        float: inline-start;
     }
     .about_3 img{
-        float: none;
+        float: inline-start;
     } }
