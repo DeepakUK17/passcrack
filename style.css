@@ -187,20 +187,17 @@ ul{
     border: 5px;
     border-color:transparent;
     border-style: solid;
-    height: 300px;
     position: relative;}
 .about2 {
     border: 5px;
     border-color:transparent;
     border-style: solid;
-    height: 300px;
     position: relative;}
 .about3 {
-    border: 5px;
+    border: 0px;
     border-color:transparent;
     border-style:solid;
-    height: 300px;
-    padding-bottom: 150px;
+    padding-bottom: 0px;
     position: relative;}
 .about_1 h1 {
     padding: 5px;
@@ -245,4 +242,5 @@ ul{
     }
     .about_3 img{
         float: inline-start;
-    } }
+    }
+ }
