@@ -12,7 +12,7 @@ submitbutton.addEventListener('click', function(event){
 togglePassword.addEventListener('click', () => {
   const type = inputpassword.getAttribute('type') === 'password' ? 'text' : 'password';
   inputpassword.setAttribute('type', type);
-togglePassword.textContent = type === 'password' ? '👁️' : '◡';});
+togglePassword.textContent = type === 'password' ? '👁' : '◡';});
 resetbutton.addEventListener('click', function(event) {
   event.preventDefault()
   foms.style.display="block";
