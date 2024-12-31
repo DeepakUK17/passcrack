@@ -293,12 +293,15 @@ ul{
     }
     .about_1 h1 {
         font-size: x-large;
+        text-align: center;
     }
     .about_2 h1 {
         font-size: x-large;
+        text-align: center;
     }
     .about_3 h1 {
         font-size: x-large;
+        text-align: center;
     }
     .about_1 ul {
         font-size: large;
