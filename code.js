@@ -7,35 +7,23 @@ var submitbutton= document.getElementById("submit-button")
 var foms= document.querySelector(".forms")
 var resetbutton= document.getElementById("reset-button")
 var togglePassword = document.getElementById('togglePassword');
-
-
-
 submitbutton.addEventListener('click', function(event){
-  event.preventDefault()
-})
-
+  event.preventDefault()})
 togglePassword.addEventListener('click', () => {
   const type = inputpassword.getAttribute('type') === 'password' ? 'text' : 'password';
   inputpassword.setAttribute('type', type);
-  togglePassword.textContent = type === 'password' ? '👁️' : '◡';
-});
-
-
+togglePassword.textContent = type === 'password' ? '👁️' : '◡';});
 resetbutton.addEventListener('click', function(event) {
   event.preventDefault()
   foms.style.display="block";
   output.style.display="none";
-  resetForm();
-});
-
+  resetForm()});
 function resetForm() {
   inputname.value = '';
   inputdob.value = '';
   inputnumber.value = '';
   inputpassword.value = '';
-  output.innerHTML = '';
-}
-
+  output.innerHTML = '';}
 function check_input(){
   const isPhoneValid = /^\d{10}$/.test(inputnumber.value);
   if (inputname.value && inputdob.value && isPhoneValid && inputpassword.value) {
@@ -45,12 +33,7 @@ function check_input(){
   }
   else {
   alert("PLEASE ENTER CORRECT DETAILS");
-  }
- 
-}
-
-
-
+  }}
 function program() {
   function checkPasswordStrength() {
     password = inputpassword.value;
@@ -61,7 +44,6 @@ function program() {
     var remarks = '';
     var note = '';
     var lowerCount = 0, upperCount = 0, numCount = 0, wspaceCount = 0, specialCount = 0;
-
     for (let char of password) {
       if (/[a-z]/.test(char)) {
         lowerCount++;
@@ -75,13 +57,11 @@ function program() {
         specialCount++;
       }
     }
-
     if (lowerCount >= 1) strength++;
     if (upperCount >= 1) strength++;
     if (numCount >= 1) strength++;
     if (wspaceCount >= 1) strength++;
     if (specialCount >= 1) strength++;
-
     if (strength == 1) {
       remarks = "That's a very bad password. Change it as soon as possible.";
     } else if (strength == 2) {
@@ -93,7 +73,6 @@ function program() {
     } else if (strength == 5) {
       remarks = "Now that's one hell of a strong password!!! Hackers don't have a chance guessing that password!";
     }
-
     if (inputpassword.value.includes(inputname.value)) {
       note += "* Your password should not contain your name or any part of it. It's too easy to guess.<br>";
     }
@@ -106,7 +85,6 @@ function program() {
     if (inputpassword.value.includes(inputdob.value.split('-')[2])) {
       note += "* Your password should not contain your birth date. It's too easy to guess.<br>";
     }
-
     if (inputpassword.value.includes(inputnumber.value)) {
       note += "* Your password should not contain your phone number. It's too easy to guess.<br>";
     }
@@ -117,7 +95,6 @@ function program() {
         break;
       }
     }
-
     for (let i = 0; i <= inputnumber.value.length - 5; i++) {
       let substring = inputnumber.value.substring(i, i + 5);
       if (inputpassword.value.includes(substring)) {
@@ -125,7 +102,6 @@ function program() {
         break;
       }
     }
-
     output.innerHTML += '<span style="color:red; text-decoration: underline;text-align: left;">Your password has:-<br>';
     output.innerHTML += `${lowerCount} lowercase letters<br>`;
     output.innerHTML += `${upperCount} uppercase letters<br>`;
@@ -138,7 +114,6 @@ function program() {
     output.innerHTML += `${remarks}<br>`;
     output.innerHTML += `<span style="color:red; text-decoration: underline;text-align: left;">Note:<br>`;
     output.innerHTML += `${note}<br>`;
-
     for (let i of password) {
       if (/[a-z]/.test(i)) {
         crack1 += 26;
@@ -150,7 +125,6 @@ function program() {
         crack4 += 32;
       }
     }
-
     if (lowerCount >= 1) {
       crack += crack1 / lowerCount;
     } else {
@@ -171,17 +145,14 @@ function program() {
     } else {
       crack += crack4;
     }
-
     const attempts = Math.pow(crack, length);
     const timeToCrackSeconds = attempts / 1e12;
-
     const minutes = timeToCrackSeconds / 60;
     const hours = minutes / 60;
     const days = hours / 24;
     const weeks = days / 7;
     const months = days / 30;
     const years = days / 365;
-
     if (timeToCrackSeconds < 60) {
       output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${timeToCrackSeconds} seconds<br>`;
@@ -204,10 +175,6 @@ function program() {
       output.innerHTML+=`<span style="color:red; text-decoration: underline;text-align: left;">Time to crack your password:<br>`;
       output.innerHTML+=`${Math.round(years)} years<br>`;
     }
-
-    // Exit the program after checking the password
-    console.log('Exiting...');
   };
   output.innerHTML+='===== Welcome to Password Strength Checker =====<br>';
-  checkPasswordStrength()
-  };
+  checkPasswordStrength()};
